@@ -81,13 +81,22 @@
     letter-spacing: .3px;
   }
   .logo {
-    width: 28px; height: 28px; border-radius: 8px;
-    display: grid; place-items: center;
-    color: #000;
-    background: conic-gradient(from 150deg, #5cc8ff, #7ee787, #b794f4, #5cc8ff);
-    box-shadow: var(--shadow-2);
-    font-size: 16px;
-  }
+      width: 48px;
+      height: 48px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      background: #1e293b;        /* slate-800 */
+      color: #fff;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.2);
+    }
+    .logo .fa-notebook,
+    .logo .fa-book,
+    .logo .fa-book-open,
+    .logo .fa-note-sticky {
+      font-size: 24px;
+    }
 
   .header-actions {
     display: flex; align-items: center; gap: 10px; margin-left: auto;
@@ -373,7 +382,10 @@
   <!-- Header -->
   <header class="header">
     <div class="brand">
-      <div class="logo">N</div>
+      <div class="logo">
+    <!-- Good notebook-like choices: fa-book, fa-book-open, fa-note-sticky -->
+    <i class="fa-solid fa-book"></i>
+  </div>
       <div>Note Taker Pro</div>
       
     </div>
